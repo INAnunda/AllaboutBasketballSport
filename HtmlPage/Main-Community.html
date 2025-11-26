@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="stylesheet" href="/Csspage/CssMain.css">
+    <link rel="stylesheet" href="/Bootstrap5-templete/css/bootstrap.min.css">
+
+</head>
+<body class="BodyBG">
+    <!-- Main-Head -->
+    <div class="container-fluid bg-white"> 
+        <header class="d-flex justify-content-end py-3" style="margin-right: 20px;"> 
+            <ul class="nav nav-pills"> 
+                <li class="nav-item"><a href="Main.html" class="nav-link active" aria-current="page">Home</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link">Features</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li> 
+            </ul> 
+        </header> 
+    </div>
+    <!-- Main-Head -->
+
+<!-- Sidebar -->
+<div class="d-flex">
+
+    <!-- Bar 1: Icon Sidebar -->
+    <div class="d-flex flex-column flex-shrink-0 position-fixed" 
+         style="width: 4.5rem; height: 100vh; background-color: #808080;">
+        <a href="/" 
+           class="d-block p-3 link-body-emphasis text-decoration-none" 
+           data-bs-toggle="tooltip" 
+           data-bs-placement="right" 
+           data-bs-original-title="Icon-only">
+            <svg class="bi pe-none" width="40" height="32" aria-hidden="true">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="visually-hidden">Icon-only</span>
+        </a>
+
+        <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+            <li class="nav-item">
+                <a href="#" class="nav-link active py-3 border-bottom rounded-0" aria-current="page"
+                   data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home"
+                   data-bs-original-title="Home">
+                    <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Home">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link py-3 border-bottom rounded-0"
+                   data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Dashboard"
+                   data-bs-original-title="Dashboard">
+                    <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Dashboard">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link py-3 border-bottom rounded-0"
+                   data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Orders"
+                   data-bs-original-title="Orders">
+                    <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Orders">
+                        <use xlink:href="#table"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link py-3 border-bottom rounded-0"
+                   data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Products"
+                   data-bs-original-title="Products">
+                    <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Products">
+                        <use xlink:href="#grid"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link py-3 border-bottom rounded-0"
+                   data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Customers"
+                   data-bs-original-title="Customers">
+                    <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Customers">
+                        <use xlink:href="#people-circle"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+        <div class="dropdown border-top">
+            <a href="#" 
+               class="d-flex align-items-center justify-content-center p-3 link-body-emphasis text-decoration-none dropdown-toggle" 
+               data-bs-toggle="dropdown" 
+               aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="mdo" width="24" height="24" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small shadow">
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bar 2: Message Sidebar -->
+    <div class="d-flex flex-column align-items-stretch flex-shrink-0 position-fixed"
+         style="width: 380px; height: 100vh; margin-left: 4.5rem; background-color: whitesmoke; overflow-y: auto;">
+        <a href="/" 
+           class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none border-bottom">
+            <svg class="bi pe-none me-2" width="30" height="24" aria-hidden="true">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-5 fw-semibold">List group</span>
+        </a>
+
+        <div class="list-group list-group-flush border-bottom scrollarea">
+            <!-- ตัวอย่างรายการ -->
+            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm" aria-current="true"
+            style="background-color: #f0f0f0; color: #333;">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <strong class="mb-1">List group item heading</strong>
+                    <small>Wed</small>
+                </div>
+                <div class="col-10 mb-1 small">
+                    Some placeholder content in a paragraph below the heading and date.
+                </div>
+            </a>
+        </div>
+         <div class="list-group list-group-flush border-bottom scrollarea">
+            <!-- ตัวอย่างรายการ -->
+            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm" aria-current="true"
+            style="background-color: #f0f0f0; color: #333;">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <strong class="mb-1">List group item heading</strong>
+                    <small>Sun</small>
+                </div>
+                <div class="col-10 mb-1 small">
+                    Some placeholder content in a paragraph below the heading and date.
+                </div>
+            </a>
+        </div>
+        
+
+    </div>
+
+</div>
+<!-- Sidebar -->
+
+<!-- ChartBoard -->
+ <div class="Container-main-chartboard">
+    <div class="Container-in-chartboard">
+        <!-- กะทู้ สำหรับ พูดคุย -->
+        <div class="Container-chatboard">
+            <!-- ข้อความผู้เล่น Alex -->
+            <div>
+                <strong>Alex:</strong> สวัสดีทุกคน! ใครดูแมทช์เมื่อคืนบ้าง?
+                <hr>
+            </div>
+
+            <!-- ข้อความผู้เล่น Jordan -->
+            <div class="message message-right">
+                <strong>Jordan:</strong> ผมดูครับ ทีมเราเล่นดีมากเลย!
+                <hr>
+            </div>
+
+            <!-- ข้อความผู้เล่น Mia -->
+            <div class="message message-left">
+                <strong>Mia:</strong> ใช่เลย ผมชอบการบุกของทีมเรามาก
+                <hr>
+            </div>
+
+            <!-- ข้อความผู้เล่น Chris -->
+            <div class="message message-right">
+                <strong>Chris:</strong> ผมว่าการป้องกันยังต้องปรับปรุงนิดหน่อย
+                <hr>
+            </div>
+
+            <!-- ข้อความผู้เล่น Alex -->
+            <div class="message message-left">
+                <strong>Alex:</strong> ใครจะมาแมทช์หน้าเจอกับ Lakers บ้าง?
+                <hr>
+            </div>
+
+            <!-- ข้อความผู้เล่น Mia -->
+            <div class="message message-right">
+                <strong>Mia:</strong> ผมไปแน่นอน อยากเห็นผู้เล่นใหม่ลงสนาม
+                <hr>
+            </div>
+
+            <!-- ข้อความผู้เล่น Jordan -->
+            <div class="message message-left">
+                <strong>Jordan:</strong> ผมก็สนุกกับแมทช์หน้าเหมือนกัน
+                <hr>
+            </div>
+
+            <!-- ข้อความผู้เล่น Chris -->
+            <div class="message message-right">
+                <strong>Chris:</strong> อย่าลืมเอารองเท้าบาสและน้ำมาด้วย
+                <hr>
+            </div>
+
+            <!-- ข้อความผู้เล่น Alex -->
+            <div class="message message-left">
+                <strong>Alex:</strong> ถูกต้อง! เตรียมตัวให้พร้อม
+                <hr>
+            </div>
+        </div>
+
+
+    </div>
+ </div>
+
+</body>
+</html>

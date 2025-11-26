@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root */
+
+:root{
+    --Transform-color: rgb(225, 21, 21);;
+    --Transform-color-gray: rgb(199, 199, 199);
+}
+
+/* :root */
+
+/* กำหนด keyframes ให้สีค่อยๆ เคลื่อน */
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.BodyBG{
+    background: white;
+}
+
+/* สร้าง animation ทำให้ สั่น */
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(2px, 0); }
+  50% { transform: translate(-2px, 0); }
+  75% { transform: translate(2px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+.mainText{
+    max-width: 100%;
+    height: 250px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+
+    h1{
+        text-align: center;
+        font-size: 65px;
+        font-weight: 500;
+        transition: 0.5s ease;
+    }
+}
+
+.mainText:hover{
+    background-color: var(--Transform-color);
+
+    h1{
+        margin-bottom: 30px;
+        font-size: 80px;
+        font-weight: 900;
+        color: white;
+         animation: shake 0.3s infinite;
+    }
+}
+
+.Parent-MainMenu{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 2px black;
+    transition: 0.5s ease;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+.Parent-MainMenu:hover{
+    background-color: black;
+    height: 40px;
+}
+
+.MainMenu-Item{
+    width: 260px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border: 3px solid black;
+    border-radius: 10px; /* มนเล็กน้อย */
+    transition:  0.5s ease; /* ทำให้ hover ลื่นไหล */
+
+    p{
+        color: black;
+        font-size: 40px;
+        transition: 0.5s ease;
+    }
+
+}
+
+.MainMenu-Item:hover {
+    width: 320px;
+    height: 210px;
+    background-color: black;
+    cursor: pointer;
+
+    p{
+        color: white;
+        font-size: 50px;
+    }
+}
+
+.Parent-Shop{
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    border: solid black 3px;
+    transition: 0.5s ease;
+}
+
+.Parent-Shop:hover{
+    background: rgb(193, 193, 193);
+
+}
+
+.Product-Items{
+    padding: 50px;
+    border-radius: 5px;
+    margin: 20px;
+    border: solid black 3px;
+    background-image: url(/Img/Photo/basketball-court-with-people-fan-sport-arena-render-3d-illustration.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.Picture{
+    text-align: center;
+    height: 550px;
+    width: 100%;
+}
+
+.LineEnd{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.444);
+    width: 100%;
+    height: 300px;
+    margin: 50px 0px 0px 0px;
+}
+/* CssStore */
+.Text-First{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    border: solid 1px black;
+    padding: 50px 0px 50px 30px;
+    transition: 0.5s ease;
+        display: flex;
+        align-items: center;
+
+     h1{
+        transition: 0.5s ease;
+        font-size: 70px;
+        font-weight: 900;
+        margin: 50px;
+     }
+}
+
+.Text-First:hover{
+    background-color: var(--Transform-color);
+    border: solid 3px black;
+
+    h1{
+        font-size: 100px;
+         display: inline-block;
+        animation: shake 0.3s infinite;
+    }
+}
+
+.menu-store{
+    width: 100%;
+    height: 100px;
+    padding: 0px 60px;
+    margin: 30px 0px;
+}
+
+.line-items{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border: solid 2px black;
+    transition: 0.5s ease;
+
+    display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+}
+
+.line-items:hover{
+    width: 100%;
+    background-color: var(--Transform-color-gray);
+}
+
+.items-menu{
+    width: 200px;
+    height: 90%;
+    transition: 0.5s ease;
+    border-radius: 25px;
+    display: flex;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+
+        p{
+            font-size: 20px;
+            font-weight: 500;
+            color: black;
+            transition: 0.5s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+}
+
+.items-menu:hover{
+    background-color: rgb(181, 180, 180);
+    border-radius: 25px;
+    p{
+        font-size: 35px;
+        font-weight: 900;
+        color: black;
+    }
+}
+
+.container-box-parent{
+    width: 100%;
+    height: auto;
+    display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+}
+
+.menu-siteline{
+    width: 500px;
+    height: 100%;
+    margin: 30px 0px 30px 80px;
+    padding: 50px 10px;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+}
+
+.tvShowallproduct{
+    margin: 30px 100px 0px 60px;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: start;
+     flex-wrap: wrap;
+     gap: 10px;
+}
+
+.items-slide{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+
+.Product{
+    width: 270px;
+    height: 300px;
+    background-color: brown;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+/* CssStore */
+
+/* CssLibraly */
+.Libraly{
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 310px;
+}
+
+.Container-in-libraly{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    padding: 50px;
+
+    h1{
+        text-align: center;
+        margin: 0px 30px 30px 30px;
+    }
+}
+.container-all-stuff{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    align-content: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.Items-User{
+    margin-top: 20px;
+    border: solid black 2px;
+    width: 230px;
+    height: 250px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Inbox-Item{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(105, 105, 105);
+}
+
+/* CssLibraly */
+
+/* CssCommunity */
+.Container-main-chartboard{
+    background-color: rgba(250, 118, 46, 0.485);
+    width: 100%;
+    height: 657px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+
+.Container-in-chartboard{
+    background-color: aliceblue;
+    border: solid 3px black;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0px 30px 0px 0px;
+    width: 1024px;
+    height: 95%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.Container-chatboard{
+    width: 100%;           
+    height: 100%;          
+    padding: 10px;          
+    background-color: rgba(212, 35, 35, 0.451); 
+    overflow-y: auto;       
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;              
+
+}
+
+/* CssCommunity */
+
+/* CssReserve */
+.Reserve-container{
+    width: calc(100vw);
+    height: calc(100vh - 74px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Reserve-container-in{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 30px;
+    transition: 1s ease;
+}
+
+.Reserve-container-in:hover{
+    background-color: var(--Transform-color-gray);
+}
+.Reserve-container-in-flexbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    overflow: auto;
+
+}
+.box-item-reserve{
+    width: 260px;
+    height: 300px;
+    border: solid 3px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-item-reserve:hover{
+    background-color: rgb(229, 228, 228);
+}
+
+.Picture-items{
+    flex: 3;
+}
+
+.Picture-items-menu{
+    flex: 1;
+    background-color: white;
+}
+/* CssReserve */
